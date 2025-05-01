@@ -1,0 +1,269 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes loaderPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes borderPulse {
+  0% { border-color: rgba(217, 70, 239, 0.4); box-shadow: 0px 0px 10px rgba(217, 70, 239, 0.4); }
+  50% { border-color: rgba(217, 70, 239, 0.8); box-shadow: 0px 0px 20px rgba(217, 70, 239, 0.8); }
+  100% { border-color: rgba(217, 70, 239, 0.4); box-shadow: 0px 0px 10px rgba(217, 70, 239, 0.4); }
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Apply Animations */
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.animate-loaderPulse {
+  animation: loaderPulse 1.5s infinite ease-in-out;
+}
+
+.animate-borderPulse {
+  animation: borderPulse 2s infinite ease-in-out;
+}
+
+.animate-gradientText {
+  background: linear-gradient(90deg, #D946EF, #E879F9, #F472B6);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 3s infinite ease-in-out;
+}
+
+// roompage css
+
+
+.homePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.formWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #4aee88;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  
+}
+
+.homePageLogo {
+  height: 80px;
+  margin-bottom: 30px;
+}
+.CodeMirror{
+  height: 240px !important;
+  color: #fff;
+  padding-top: 0 !important ;
+
+}
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color:black;
+
+}
+
+.joinBtn,
+.leaveBtn,.copyBtn {
+  background: #4aed88;
+  width: 100px;
+  margin-left: auto;
+}
+
+.joinBtn:hover,.copyBtn:hover
+.leaveBtn:hover {
+  background: #2b824c;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+  color: #368654;
+  border-color: #368654;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+
+  
+}
+
+.aside {
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.asideInner {
+  flex: 1;
+}
+
+.clientList {
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+.userName {
+  margin-top: 10px;
+}
+
+
+
+.leaveBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.html-header{
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.css-header{
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.js-header{
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+// roomid css
+
+
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0px 0px 3px rgba(147, 51, 234, 0.3); }
+  50% { text-shadow: 0px 0px 8px rgba(147, 51, 234, 0.6); }
+  100% { text-shadow: 0px 0px 3px rgba(147, 51, 234, 0.3); }
+}
+
+/* Apply Animations */
+.animate-gradientText {
+  background-size: 300% 300%;
+  animation: gradientText 4s infinite ease-in-out;
+}
+
+.shadow-textGlow {
+  animation: textGlow 3s infinite ease-in-out;
+}
+@keyframes borderAnimation {
+    0% {
+      border-image-source: linear-gradient(90deg, #9333EA, #A855F7, #C084FC);
+    }
+    50% {
+      border-image-source: linear-gradient(90deg, #C084FC, #9333EA, #A855F7);
+      box-shadow: 0px 0px 20px rgba(147, 51, 234, 0.5);
+    }
+    100% {
+      border-image-source: linear-gradient(90deg, #9333EA, #A855F7, #C084FC);
+    }
+  }
+  
+  .animated-border {
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 0px 12px rgba(147, 51, 234, 0.4);
+    border-image-slice: 1;
+    animation: borderAnimation 2.5s infinite ease-in-out;
+  }
+  
